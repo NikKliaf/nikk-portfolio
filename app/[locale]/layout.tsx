@@ -38,18 +38,15 @@ export default async function RootLayout(
   return (
       <html lang={locale} suppressHydrationWarning>
         <head />
-          <body className={`bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 ${inter.className}`}>
+          <body className={`bg-white dark:bg-black ${inter.className}`}>
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
-              disableTransitionOnChange
             >
               <TranslationProvider translations={translations}>
                 <Header />
-                <div className="pt-16">
                   {props.children}
-                </div>
               </TranslationProvider>
             </ ThemeProvider>
           </body>

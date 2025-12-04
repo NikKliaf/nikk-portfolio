@@ -1,5 +1,25 @@
 {
-  "hero": {
-    "title": "Hello"
+  "path": "/en",
+
+  "header": {
+    "title": "Nikiforos Kliafas",
+    "buttonList": [{
+        "id":"1",
+        "title": "About",
+        "path": "#about"
+    },{
+        "id":"2",
+        "title": "Projects",
+        "path": "#projects"
+    },{
+        "id":"3",
+        "title": "Contact",
+        "path": "#contact"
+    }]
+  },
+
+  "about": {
+    "title": "About me",
+    "profile":"I am a fourth-year Computer Science student at Aristotle University of Thessaloniki. I have knowledge in databases, data analysis, and programming languages such as Java, Python, and SQL, with a growing interest in Big Data technologies. I am seeking opportunities to apply my skills to real-world data and further develop my knowledge in the field of computer science."
   }
 }
