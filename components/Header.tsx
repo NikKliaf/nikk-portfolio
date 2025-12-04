@@ -5,10 +5,6 @@ import { useTranslation } from '@/components/TranslationProvider';
 import { ThemeSwitcher } from './ThemeSwitcher'; 
 import { Button } from "@/components/ui/button"
 
-export function ButtonOutline() {
-    return <Button variant="outline"> Outline</Button>
-}
-
 export default function Header() {
   
   const { t }= useTranslation(); 

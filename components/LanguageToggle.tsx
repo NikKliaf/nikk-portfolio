@@ -44,7 +44,7 @@ export const LanguageToggle = () => {
                         className= {`
                             px-4 py-2 rounded-full font-semibold transition-all duration-300 text-sm 
                             ${isActive 
-                                ? 'bg-white text-black shadow-md' 
+                                ? 'bg-purple-500 text-black shadow-md' 
                                 : 'text-white/70 hover:bg-white/10 hover:text-white' 
                             }
                         `}
