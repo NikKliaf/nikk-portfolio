@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import  { i18n }  from '@/il8n.config'; 
 import { TranslationProvider } from '@/components/TranslationProvider'; 
 import FlyonuiScript from "@/components/FlyonuiScript";
+import Header from '@/components/Header';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,15 +38,18 @@ export default async function RootLayout(
   return (
       <html lang={locale} suppressHydrationWarning>
         <head />
-          <body className={inter.className}>
+          <body className={`bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 ${inter.className}`}>
             <ThemeProvider
               attribute="class"
-              defaultTheme="dark"
+              defaultTheme="system"
               enableSystem
               disableTransitionOnChange
             >
               <TranslationProvider translations={translations}>
-                {props.children}
+                <Header />
+                <div className="pt-16">
+                  {props.children}
+                </div>
               </TranslationProvider>
             </ ThemeProvider>
           </body>

@@ -8,6 +8,7 @@ const Hero = () => {
 
   return (
     <div className="text-center h-full justify-center">
+        
         <h1>
             {t('hero.title')}
         </h1>
