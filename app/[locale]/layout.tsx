@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   description: "Το προσωπικό portfolio του Νικηφόρου Κλιάφα",
 };
 
+type LocaleLayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
 export default async function RootLayout(
-  props: {
-    children: React.ReactNode;
-    params: { locale: string };
-  }
+
+  props: LocaleLayoutProps
+
 ) {
 
-  const { locale } = await props.params; 
+  const params = await props.params;
+  const { locale } = params; 
 
   if (!i18n.locales.includes(locale)) {
     notFound(); 
@@ -30,7 +35,6 @@ export default async function RootLayout(
   const translations = await getTranslations(locale);
 
   return (
-    <>
       <html lang={locale} suppressHydrationWarning>
         <head />
           <body className={inter.className}>
@@ -47,7 +51,6 @@ export default async function RootLayout(
           </body>
           <FlyonuiScript />
       </html>
-    </>
   );
 }
 
