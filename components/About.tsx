@@ -3,27 +3,15 @@ import React, { useState } from 'react'
 import { useTranslation } from '@/components/TranslationProvider';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { IconDownload, IconCheck } from "@tabler/icons-react";
+import { IconFile } from "@tabler/icons-react";
 
 const About = () => {
-
-  const [downloading, setDownloading] = useState(false);
-
-  const handleDownload = () => {
-        if (downloading) return;
-        
-        setDownloading(true);
-      
-        setTimeout(() => {
-            setDownloading(false);
-        }, 3000); 
-    };
 
   const { t } = useTranslation();
 
   return (
-    <section id="about">
-      <div className="space-x-6 h-full justify-center pt-10 pb-10 pr-25 items-start flex">
+    <section id="about" className="pb-15">
+      <div className="space-x-6 h-full justify-center pt-10 pr-25 items-start flex">
         <Image 
           src='/me.jpg'
           alt="Picture of me"
@@ -38,37 +26,24 @@ const About = () => {
           <p className="text-black/80 dark:text-white/80 text-justify pb-5  ">
               {t('about.profile')}
           </p>
-          <div className="text-center pr-25">
+          <div className="text-center pr-25 pb-10">
             <a 
-                //href="/Nikiforos_Kliafas_CV.pdf"
-                download="Nikiforos_Kliafas_CV.pdf"
+                href="/Nikiforos_Kliafas_CV.pdf"
                 target="_blank"
                 rel ="noopener noreferrer"
-                onClick={handleDownload}
                 className="text-center inline-block"
               >
                 <Button 
                   variant="outline" size="sm"
-                  disabled={downloading}
                   className="rounded-lg p-5 m-5 transition-colors duration-500
                     overflow-hidden shadow-md flex justify-start items-center 
                     bg-purple-500 dark:bg-purple-500 text-black dark:text-white"
                 >
                 <span className="relative flex justify-center items-center mr-3">
-                  <IconDownload className={`h-6 w-6 absolute transition-all duration-500 ease-in-out 
-                                      ${downloading 
-                                          ? 'opacity-0 rotate-180 scale-0'  
-                                          : 'opacity-100 rotate-0 scale-100' 
-                                      }`}/>
-                  <IconCheck className={`h-6 w-6 absolute transition-all duration-500 ease-in-out 
-                                      ${downloading 
-                                          ? 'opacity-100 rotate-0 scale-100' 
-                                          : 'opacity-0 -rotate-180 scale-0' 
-                                      }`} 
-                      />
+                  <IconFile className="-6 w-6 absolute transition-all duration-500 ease-in-out"/>
                 </span>
                 <span className="text-left transition-colors duration-300">
-                  {downloading ? "Download Complete!" : "Download my Resume"}
+                  {t("about.resume")}
                 </span>
               </Button>
               </a>
