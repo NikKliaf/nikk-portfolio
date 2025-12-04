@@ -1,9 +1,5 @@
 {
-  "Index": {
-    "title": "Καλωσόρισμα",
-    "description": "Η περιγραφή μου"
-  },
-  "Navigation": {
-    "home": "Αρχική"
+  "hero": {
+    "title": "Γειά σου"
   }
 }
