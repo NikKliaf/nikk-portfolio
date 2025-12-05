@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Νικηφόρος Κλιάφας — Portfolio",
+  title: "Nikiforos Kliafas — Portfolio",
   description: "Το προσωπικό portfolio του Νικηφόρου Κλιάφα",
 };
 
