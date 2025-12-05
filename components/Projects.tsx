@@ -42,7 +42,7 @@ const Projects = () => {
             </h2>
             <div className="md:max-w-3xl lg:max-w-4xl max-h-screen mx-auto">
                 <Carousel setApi={setApi} className="w-full">
-                    <CarouselContent>
+                    <CarouselContent className="ml-0">
                         {projects.map((project) => (
                             <CarouselItem key={project.id} className="p-4">
                                 <div className="p-1 ">
