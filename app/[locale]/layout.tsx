@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { notFound } from 'next/navigation';
 import  { i18n }  from '@/i18n.config'; 
 import { TranslationProvider } from '@/components/TranslationProvider'; 
-import FlyonuiScript from "@/components/FlyonuiScript";
 import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 
@@ -52,7 +51,6 @@ export default async function RootLayout(
               </TranslationProvider>
             </ ThemeProvider>
           </body>
-          <FlyonuiScript />
       </html>
   );
 }

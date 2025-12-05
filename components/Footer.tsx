@@ -5,7 +5,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="footer" className="pt-15 pb-15 border-t w-screen border-black dark:border-white">
+    <section id="footer" className="pt-15 pb-15 border-t w-screen border-black/30 dark:border-white/10">
     </section>
   )
 }

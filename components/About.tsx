@@ -34,9 +34,9 @@ const About = () => {
               >
                 <Button 
                   variant="outline" size="sm"
-                  className="rounded-lg p-5 m-5 transition-colors duration-500
-                    overflow-hidden shadow-md flex justify-start items-center 
-                    bg-purple-500 dark:bg-purple-500 text-black dark:text-white"
+                  className="cursor-pointer rounded-lg p-5 m-5 transition-colors duration-500
+                    overflow-hidden shadow-md flex justify-start items-center border border-black/30 dark:border-white/10
+                    bg-purple-500 dark:bg-purple-500 text-black/80 dark:text-white/80"
                 >
                 <span className="relative flex justify-center items-center mr-3">
                   <IconFile className="-6 w-6 absolute transition-all duration-500 ease-in-out"/>

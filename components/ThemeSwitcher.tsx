@@ -11,10 +11,9 @@ export function ThemeSwitcher() {
   
   const { theme, setTheme } = useTheme()
 
-  //TODO : make this shit work
   return (
     <Button variant="outline" size="icon"
-    className="rounded-lg"
+    className="cursor-pointer rounded-lg bg-white dark:bg-black text-black dark:text-white border border-black/30 dark:border-white/10 p-2"
     onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
         <IconSun className="swap size-7 absolute rotate-0 scale-100 dark:-rotate-90 dark:scale-0"/>
         <IconMoon className="swap size-7 absolute rotate-90 scale-0 dark:rotate-0 dark:scale-100"/>

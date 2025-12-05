@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const projects = [
   {
     id: 1,
@@ -32,7 +34,6 @@ export const projects = [
     id: 4,
     title: "Car Management Android App",
     des: "Developed an Android application in Android Studio for managing car maintenance and expenses.",
-    // ⚠️ ΔΙΟΡΘΩΣΗ: Array of Objects { src, name }
     iconLists: [
       { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg", name: "Java" },
       { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg", name: "Android Studio" },
@@ -60,3 +61,90 @@ export const projects = [
     link: "https://github.com/NikKliaf/Reply-Request-Socket-Programming-App",
   },
 ];
+
+export const skills = [{
+    id: 1,
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    link: "https://www.python.org/"
+  },
+  {
+    id: 2,
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg",  
+    link: "https://www.java.com/en/"
+  },
+  {
+    id: 3,
+    name: "C",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+    https: "https://en.cppreference.com/w/c"
+  },
+  {
+    id: 4,
+    name: "C++",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    https: "//isocpp.org/"
+  },
+  {
+    id: 5,
+    name: "Linux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    link: "https://www.linux.org/"
+  },
+  {
+    id: 6,
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    link: "https://git-scm.com/"
+  },
+  { 
+    id: 7,
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    link: "github.com"
+  },
+  {
+    id: 8,
+    name: "SQLite",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+    link: "https://www.sqlite.org/index.html"
+  },
+  {
+    id: 9,
+    name: "PyTorch",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+    link: "https://pytorch.org/"
+  },
+  {
+    id: 10,
+    name: "Jupyter Notebook",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+    link: "https://jupyter.org/"
+  },
+  
+  {
+    id: 11,
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    id: 12,
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    link: "https://nextjs.org/"
+  }, 
+  {
+    id: 13,
+    name: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    id: 14,
+    name: "Taiwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    link: "https://tailwindcss.com/"
+  },
+]

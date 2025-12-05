@@ -33,7 +33,7 @@ export const LanguageToggle = () => {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-999 flex items-center bg-white dark:bg-black backdrop-blur-sm rounded-full p-1 border border-black/80 dark:border-white/10">
+        <div className="fixed bottom-6 right-6 z-999 flex items-center bg-white dark:bg-black backdrop-blur-sm rounded-full p-1 border border-black/30 dark:border-white/10">
             {LANGUAGES.map(({code, label}) => {
                 const isActive = code === currentLocale;
                 
@@ -45,7 +45,7 @@ export const LanguageToggle = () => {
                             px-4 py-2 rounded-full font-semibold transition-all duration-300 text-sm 
                             ${isActive 
                                 ? 'bg-purple-500 text-black shadow-md' 
-                                : 'text-white/70 hover:bg-white/10 hover:text-white' 
+                                : 'text-white/70 hover:bg-white/10 hover:text-white cursor-pointer' 
                             }
                         `}
                     >

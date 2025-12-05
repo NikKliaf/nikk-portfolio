@@ -16,7 +16,7 @@ export default function Header() {
                        bg-transparent
                        backdrop-blur-md shadow-lg 
                        transition-colors duration-500
-                       border">
+                       ">
       
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
         <Link 
@@ -29,16 +29,12 @@ export default function Header() {
 
         <div className="hidden md:flex space-x-6">
         {buttonList.map((item: {id:number, path:string, title:string}) => (
-            <Button className="rounded-lg bg-white dark:bg-black text-black dark:text-white border-2 p-4" key={item.id}>
-                <Link 
-                href={`${item.path}`} 
-                className="text-gray-700 dark:text-gray-300 font-medium 
-                            hover:text-black dark:hover:text-white 
-                            transition-colors duration-200 p-2 rounded-lg"
-                >
+          <a key={item.id} 
+             href={`${item.path}`}>
+            <Button className="cursor-pointer rounded-lg bg-white dark:bg-black text-black border border-black/30 dark:border-white/10 dark:text-white p-4">
                 {item.title} 
-                </Link>
             </Button>
+          </a>
         ))}
         </div>
 

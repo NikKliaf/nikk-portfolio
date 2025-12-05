@@ -18,9 +18,9 @@ const Projects = () => {
    const { t } = useTranslation(); 
 
   return (
-    <section id="projects" className="pt-15 pb-15 border-t border-b border-black dark:border-white">
+    <section id="projects" className="pt-15 pb-15 border-t border-b border-black/30 dark:border-white/10">
         <div className="space-x-6 h-full">
-            <h2 className="heading text-2xl font-bold pb-10">
+            <h2 className="heading text-2xl font-bold pb-15">
                 {t("projects.title")}
             </h2>
             <div className="max-w-3xl max-h-screen mx-auto">
