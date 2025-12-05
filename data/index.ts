@@ -3,42 +3,60 @@ export const projects = [
     id: 1,
     title: "CNN Image Classification on CIFAR-10",
     des: "This project implements and compares various methods for classifying images from the CIFAR-10 dataset. The primary objective was to develop a Deep Convolutional Neural Network capable of outperforming classical machine learning classification algorithms.",
-    iconLists: ["Jupyter, Python, PyTorch"],
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg", name: "Jupyter Notebook" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", name: "Python" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg", name: "PyTorch" },
+    ],
     link: "https://github.com/NikKliaf/CNN-CIFAR-10",
   },
   {
     id: 2,
     title: "R*Tree Spatial Index Implementation in Java",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    iconLists: ["Java, OpenStreetMap, Databases"],
+    des: "This project is a Java implementation of the R*Tree Index for Spatial Data. Organize OpenStreetMap (OSM) data into blocks, stored inside a datafile. Indexed data into an R*-tree structure, with Range, k-NearestNeighbors and Skyline queries. Includes a Technical Essay...",
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg", name: "Java" },
+    ],
     link: "https://github.com/NikKliaf/r-tree-java-implementation",
   },
   {
     id: 3,
     title: "Movie Management application",
     des: "Java Swing application where users can login and view movies and series, as well as review them",
-    iconLists: ["Java, JavaSwing"],
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg", name: "Java" },
+    ],
     link: "https://github.com/NikKliaf/MyTVProject",
   },
   {
     id: 4,
     title: "Car Management Android App",
     des: "Developed an Android application in Android Studio for managing car maintenance and expenses.",
-    iconLists: ["Java, Android Studio, SQL"],
+    // ⚠️ ΔΙΟΡΘΩΣΗ: Array of Objects { src, name }
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg", name: "Java" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg", name: "Android Studio" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg", name: "SQL" },
+    ],
     link: "https://github.com/NikKliaf/android-app-dev",
   },
   {
     id: 5,
     title: "Dealership DBMS",
     des: "Developed an Android application in Android Studio for managing car maintenance and expenses.",
-    iconLists: ["SQLite"],
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", name: "SQLite" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg", name: "SQL" },
+    ],
     link: "https://github.com/NikKliaf/Dealership-Database-System",
   },
   {
     id: 6,
     title: "Java Reply Request Programming app",
     des: "Used Java Sockets to create a client-server application that handles reply-request communication over TCP/IP.",
-    iconLists: ["Java, Sockets, TCP/IP"],
+    iconLists: [
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg", name: "Java" },
+    ],
     link: "https://github.com/NikKliaf/Reply-Request-Socket-Programming-App",
   },
 ];

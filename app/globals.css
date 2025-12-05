@@ -1,13 +1,12 @@
 @import "tailwindcss";
-@plugin "flyonui"{
-    themes: all;
-}
-@import "flyonui/variants.css";
-@import "tw-animate-css";
+/*@import "tw-animate-css"; */
+
+html {
+  scroll-padding-top: 4rem; 
+  scroll-behavior: smooth;
+};
 
 @custom-variant dark (&:is(.dark *));
-@source "@/node_modules/flyonui/flyonui.js";
-@plugin "@iconify/tailwind4";
 
 @theme inline {
   --color-background: var(--background);
@@ -47,7 +46,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-}
+} 
 
 :root {
     --radius: 0.625rem;

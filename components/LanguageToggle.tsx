@@ -33,7 +33,7 @@ export const LanguageToggle = () => {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-[999] flex items-center bg-black/20 backdrop-blur-sm rounded-full p-1 border border-white/10">
+        <div className="fixed bottom-6 right-6 z-999 flex items-center bg-white dark:bg-black backdrop-blur-sm rounded-full p-1 border border-black/80 dark:border-white/10">
             {LANGUAGES.map(({code, label}) => {
                 const isActive = code === currentLocale;
                 

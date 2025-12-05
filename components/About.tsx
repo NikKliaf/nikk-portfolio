@@ -10,8 +10,8 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="pb-15">
-      <div className="space-x-6 h-full justify-center pt-10 pr-25 items-start flex">
+    <section id="about" className="pb-7 pt-10">
+      <div className="space-x-6 h-full justify-center pr-25 items-start flex">
         <Image 
           src='/me.jpg'
           alt="Picture of me"
