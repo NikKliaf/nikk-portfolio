@@ -18,7 +18,7 @@ const Projects = () => {
    const { t } = useTranslation(); 
 
   return (
-    <section id="projects" className="pt-15 border-t border-black dark:border-white">
+    <section id="projects" className="pt-15 pb-15 border-t border-b border-black dark:border-white">
         <div className="space-x-6 h-full">
             <h2 className="heading text-2xl font-bold pb-10">
                 {t("projects.title")}

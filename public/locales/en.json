@@ -25,5 +25,11 @@
   },
   "projects": {
     "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact"
   }
 }

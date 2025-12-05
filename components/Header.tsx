@@ -28,8 +28,8 @@ export default function Header() {
 
 
         <div className="hidden md:flex space-x-6">
-        {buttonList.map((item: any) => (
-            <Button className="rounded-lg bg-white dark:bg-black text-black dark:text-white border-2" key={item.id}>
+        {buttonList.map((item: {id:number, path:string, title:string}) => (
+            <Button className="rounded-lg bg-white dark:bg-black text-black dark:text-white border-2 p-4" key={item.id}>
                 <Link 
                 href={`${item.path}`} 
                 className="text-gray-700 dark:text-gray-300 font-medium 

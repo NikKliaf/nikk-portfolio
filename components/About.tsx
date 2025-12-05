@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from 'react'
 import { useTranslation } from '@/components/TranslationProvider';
 import Image from 'next/image';
 import { Button } from './ui/button';
