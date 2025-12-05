@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { notFound } from 'next/navigation';
-import  { i18n }  from '@/il8n.config'; 
+import  { i18n }  from '@/i18n.config'; 
 import { TranslationProvider } from '@/components/TranslationProvider'; 
 import FlyonuiScript from "@/components/FlyonuiScript";
 import Header from '@/components/Header';
