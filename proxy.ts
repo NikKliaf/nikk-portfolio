@@ -5,7 +5,7 @@ import { i18n } from '@/i18n.config';
 
 const { locales, defaultLocale } = i18n;
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   const pathnameIsMissingLocale = locales.every(
