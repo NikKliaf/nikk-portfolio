@@ -52,7 +52,7 @@ const Projects = () => {
                                                 </div>
 
                                                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="ml-auto flex justify-center items-center">
-                                                    <Image src="/github.svg" width={24} height={24}  />
+                                                    <Image src="/github.svg" width={24} height={24}  alt=""/>
                                                     <p className="pl-2 flex lg:text-xl md:text-xs text-sm">Github Link</p>
                                                 </a>
                                             </div>
