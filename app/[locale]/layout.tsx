@@ -41,7 +41,7 @@ export default async function RootLayout(
           <body className={`bg-white dark:bg-black ${inter.className}`}>
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
+              defaultTheme="dark"
               enableSystem
             >
               <TranslationProvider translations={translations}>

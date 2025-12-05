@@ -38,7 +38,7 @@ const Projects = () => {
                                                     {project.iconLists.map((icon : { src: string, name: string }, index : number) => (
                                                         <div 
                                                             key={icon.src} 
-                                                            className="group relative border border-black rounded-full bg-white dark:bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                                                            className="group relative border border-black rounded-full bg-white dark:bg-black lg:w-15 lg:h-15 w-20 h-20 flex justify-center items-center"
                                                             style={{ transform:`translateX(-${5 * index * 2}px)` }}
                                                         >
                                                             <Image src={icon.src} alt={`Icon ${index}`} width={64} height= {64} className="p-2"/>
@@ -52,7 +52,7 @@ const Projects = () => {
                                                 </div>
 
                                                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="ml-auto flex justify-center items-center">
-                                                    <IconBrandGithub />
+                                                    <Image src="/github.svg" width={24} height={24}  />
                                                     <p className="pl-2 flex lg:text-xl md:text-xs text-sm">Github Link</p>
                                                 </a>
                                             </div>
