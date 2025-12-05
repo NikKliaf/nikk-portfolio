@@ -9,23 +9,23 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="pb-7 pt-10">
-      <div className="space-x-6 h-full justify-center pr-25 items-start flex">
+    <section id="about" className="pb-15 pt-10">
+      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 h-full items-center md:items-start">
         <Image 
           src='/me.jpg'
           alt="Picture of me"
           width={200}
           height={200}
-          className="object-cover object-center rounded-lg"
+          className="object-cover object-center rounded-lg shrink-0"
         />
-        <div>
-          <h1 className="heading text-2xl font-bold pb-3">
+        <div className="grow max-w-full">
+          <h1 className="heading text-2xl font-bold pb-3 dark:text-white text-center text-black md:text-left">
               {t('about.title')}
           </h1>
-          <p className="text-black/80 dark:text-white/80 text-justify pb-5  ">
+          <p className="text-black/80 dark:text-white/80 text-justify pb-5">
               {t('about.profile')}
           </p>
-          <div className="text-center pr-25 pb-10">
+          <div className="text-center md:text-center pt-5">
             <a 
                 href="/Nikiforos_Kliafas_CV.pdf"
                 target="_blank"

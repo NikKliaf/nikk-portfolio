@@ -21,21 +21,21 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
         <Link 
           href={t("path")}
-          className="text-xl font-extrabold text-black dark:text-white hover:opacity-80 transition"
+          className="shrink text-lg md:text-xl text-wrap font-extrabold text-black dark:text-white hover:opacity-80 transition text-center"
         >
           {t("header.title")}
         </Link>
 
 
-        <div className="hidden md:flex space-x-6">
-        {buttonList.map((item: {id:number, path:string, title:string}) => (
-          <a key={item.id} 
-             href={`${item.path}`}>
-            <Button className="cursor-pointer rounded-lg bg-white dark:bg-black text-black border border-black/30 dark:border-white/10 dark:text-white p-4">
-                {item.title} 
-            </Button>
-          </a>
-        ))}
+        <div className="md:flex hidden md:space-x-4">
+          {buttonList.map((item: {id:number, path:string, title:string}) => (
+            <Link key={item.id} 
+              href={`${item.path}`}>
+              <Button className="cursor-pointer rounded-lg bg-purple-500 text-black border border-black/30 dark:border-white/10 dark:text-white p-4">
+                  {item.title} 
+              </Button>
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center space-x-4">

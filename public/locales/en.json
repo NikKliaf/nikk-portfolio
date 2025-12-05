@@ -24,7 +24,39 @@
     "resume": "View my Resume"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "projectData": [
+      {
+        "id": 1,
+        "title": "Deep Convolutional Neural Networks (CNN) for CIFAR-10",
+        "description": "This machine learning project focuses on building, training, and evaluating a CNN architecture designed for the classification of images from the CIFAR-10 dataset. The methodology includes data augmentation, hyperparameter tuning, and implementation using PyTorch, ultimately achieving classification accuracy that significantly surpasses traditional machine learning models like KNN and Nearest Centroid."
+      },
+      {
+        "id": 2,
+        "title": "R*Tree Spatial Index in Java",
+        "description": "A project for spatial database management, this repository features a custom implementation of the R*Tree Index, optimized for organizing and querying vast datasets derived from OpenStreetMap (OSM) files. The system supports complex spatial queries including Range Search, k-Nearest Neighbors (kNN), and advanced Skyline Query, the project handles efficient data structuring and algorithmic performance under heavy datasets."
+      },
+      {
+        "id": 3,
+        "title": "Movie Management Application (Java Swing)",
+        "description": "Developed a desktop GUI application utilizing the Java Swing library to create a movie and series management platform. Key features include user authentication, browsable media catalogs, and a system for users to submit, view, and manage reviews and ratings. This project emphasizes GUI design and object-oriented programming principles (no movies or series were downloaded for the project)."
+      },
+      {
+        "id": 4,
+        "title": "Vehicle Maintenance Tracker (Android Studio)",
+        "description": "An Android application built in Android Studio designed to help users track and manage all aspects of car ownership, including fuel consumption logs, and expenses. The application utilizes persistent storage through integration with an SQL Database."
+      },
+      {
+        "id": 5,
+        "title": "Vehicle Dealership Database Management System (DBMS)",
+        "description": "Design and normalization of a relational database schema (DBMS) used to manage the operations of a car dealership. The schema models critical entities such inventory, customer relationship management (CRM), sales transactions, and employee data, demonstrating strong command over SQL principles and database integrity constraints."
+      },
+      {
+        "id": 6,
+        "title": "TCP/IP Reply-Request Network Service (Java Sockets)",
+        "description": "A demonstration of low-level network programming, this project implements a client-server application using native Java Sockets. It manages reliable, concurrent, and bidirectional Reply-Request communication over the TCP/IP stack, serving as a functional showcase of multithreading and fundamental network protocol handling."
+      }
+    ]
   },
   "skills": {
     "title": "Skills",

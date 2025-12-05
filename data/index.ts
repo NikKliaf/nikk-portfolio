@@ -78,13 +78,13 @@ export const skills = [{
     id: 3,
     name: "C",
     icon: "/c-language.svg",
-    https: "https://en.cppreference.com/w/c.html"
+    link: "https://en.cppreference.com/w/c.html"
   },
   {
     id: 4,
     name: "C++",
     icon: "/cplusplus.svg",
-    https: "https://isocpp.org/"
+    link: "https://isocpp.org/"
   },
   {
     id: 5,

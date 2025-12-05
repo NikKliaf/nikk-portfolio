@@ -10,10 +10,10 @@ const Skills = () => {
 
   return (
     <section id="skills" className="pt-15 pb-15 border-b border-black/30 dark:border-white/10">
-        <h4 className="heading text-2xl font-bold pb-15">
+        <h4 className="heading text-2xl font-bold pb-15 text-center md:text-justify">
             {t("skills.title")}
         </h4>
-        <p className="pb-5 text-xl text-black/80 dark:text-white/80 text-justify">
+        <p className="pb-5 text-xl text-black/80 dark:text-white/80 text-center md:text-justify">
             {t("skills.description")}
         </p>
         <div className="flex flex-wrap justify-center mt-10">
