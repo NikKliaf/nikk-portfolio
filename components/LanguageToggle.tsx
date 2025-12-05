@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
-import { i18n } from "@/il8n.config";
+import { i18n } from "@/i18n.config";
 import path from "path";
 
 const LANGUAGES = [
