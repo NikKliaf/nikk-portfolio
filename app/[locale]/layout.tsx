@@ -11,10 +11,32 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Nikiforos Kliafas — Portfolio",
-  description: "Το προσωπικό portfolio του Νικηφόρου Κλιάφα",
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' }, 
+    { locale: 'el' },
+  ];
+}
+
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const titles: Record<string, string> = {
+    en: "Nikiforos Kliafas | Portfolio",
+    el: "Νικηφόρος Κλιάφας | Πορτφόλιο",
+  };
+
+  return {
+    title: titles[locale] || titles.el,
+    description: locale === 'en' 
+      ? 'My personal developer portfolio.' 
+      : 'Το προσωπικό μου portfolio.',
+  };
+}
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
